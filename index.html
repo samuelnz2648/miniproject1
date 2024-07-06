@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add a new todo"
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+      <div id="todo-list"></div>
+    </div>
+
+    <template id="todo-template">
+      <div class="todo-card">
+        <p class="todo-text"></p>
+        <input type="text" class="edit-input" style="display: none" />
+        <div>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+          <button class="save-btn" style="display: none">Save</button>
+          <button class="cancel-btn" style="display: none">Cancel</button>
+        </div>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
